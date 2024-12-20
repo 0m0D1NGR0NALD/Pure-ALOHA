@@ -1,0 +1,3 @@
+@namespace(aloha);
+
+@license(omnetpp);
