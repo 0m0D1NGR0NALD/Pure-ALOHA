@@ -31,7 +31,6 @@ The following scenarios are included in the simulation:
 This repository includes:
 1. **Simulator Code**: A fully-functional implementation of the Pure ALOHA network.
 2. **Documentation**: Detailed explanation of the simulation design, methodology, and results.
-3. **Presentation**: A concise 10-slide presentation summarizing key findings.
 
 ## Usage
 
