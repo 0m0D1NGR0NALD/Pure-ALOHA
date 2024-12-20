@@ -36,7 +36,7 @@ This repository includes:
 
 1. Clone the repository:  
    ```
-   [git clone https://github.com/yourusername/aloha-network-simulator.git](https://github.com/0m0D1NGR0NALD/Pure-ALOHA.git)
+   git clone https://github.com/yourusername/aloha-network-simulator.git
    ```
 2. Follow the instructions in the documentation to configure and run the simulator.
 
