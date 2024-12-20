@@ -50,11 +50,11 @@ Ensure you have **OMNeT++ 6** installed on your system. For installation and set
 4. Run the simulation by selecting the following experiment in OMNeT++:
    ```
    [Experiment_varyN_T]
-   description = "various values of N, various exponential mean values of T"
+   description = "various values of N, various values of T"
    repeat = 1
    seed-set = 20
    Aloha.N = ${N=5,10,15,20,25,30} # vary N
-   Aloha.station[*].T = exponential(${T=2,4,6..30 step 2}s) # vary T (overload, optimal, low traffic)
+   Aloha.station[*].T = exponential(${T=2,4,6..30 step 2}s) # vary T
    ```
 
 ### Parameters Explanation
