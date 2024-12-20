@@ -41,7 +41,7 @@ Ensure you have **OMNeT++ 6** installed on your system. For installation and set
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/aloha-network-simulator.git
+   https://github.com/0m0D1NGR0NALD/Pure-ALOHA.git
    ```
 2. Open **OMNeT++ 6** and import the project.
 
