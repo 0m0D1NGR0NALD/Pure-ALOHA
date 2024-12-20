@@ -32,13 +32,46 @@ This repository includes:
 1. **Simulator Code**: A fully-functional implementation of the Pure ALOHA network.
 2. **Documentation**: Detailed explanation of the simulation design, methodology, and results.
 
-## Usage
+## Execution Instructions
 
-1. Clone the repository:  
-   ```
+### Prerequisites
+Ensure you have **OMNeT++ 6** installed on your system. For installation and setup instructions, visit the [OMNeT++ official site](https://omnetpp.org).
+
+### Running the Simulation
+
+1. Clone this repository:
+   ```bash
    git clone https://github.com/yourusername/aloha-network-simulator.git
    ```
-2. Follow the instructions in the documentation to configure and run the simulator.
+2. Open **OMNeT++ 6** and import the project.
+
+3. Locate the `omnetpp.ini` configuration file in the project directory.
+
+4. Run the simulation by selecting the following experiment in OMNeT++:
+   ```
+   [Experiment_varyN_T]
+   description = "various values of N, various exponential mean values of T"
+   repeat = 1
+   seed-set = 20
+   Aloha.N = ${N=5,10,15,20,25,30} # vary N
+   Aloha.station[*].T = exponential(${T=2,4,6..30 step 2}s) # vary T (overload, optimal, low traffic)
+   ```
+
+### Parameters Explanation
+
+- **`Aloha.N`**: Number of stations in the network. The experiment varies this parameter to evaluate performance for different station counts (e.g., 5, 10, 15, etc.).
+- **`Aloha.station[*].T`**: Message generation interval for each station, following an exponential distribution. The experiment varies the mean of `T` across a range of values (e.g., 2s to 30s in steps of 2s) to simulate different traffic conditions:
+  - Overload conditions (small `T` values)
+  - Optimal traffic conditions (moderate `T` values)
+  - Low traffic conditions (large `T` values)
+
+### Viewing Results
+
+After running the simulation:
+1. Access the output files generated in the **results folder** of the project.
+2. Use the OMNeT++ analysis tool to visualize throughput, message delay, and other metrics.
+
+This experiment provides insights into the behavior of the Pure ALOHA protocol under varying traffic and station configurations.
 
 ## License
 
