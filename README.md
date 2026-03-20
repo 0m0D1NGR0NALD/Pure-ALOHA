@@ -79,4 +79,4 @@ This project is licensed under the MIT License.
 
 ## Acknowledgments
 
-This project is part of a course project to evaluate the performance of the Pure ALOHA protocol. Special thanks to the course instructors at the UUniversity of Pisa for their guidance and resources.
+This project is part of a course project to evaluate the performance of the Pure ALOHA protocol. Special thanks to the course instructors at the University of Pisa for their guidance and resources.
